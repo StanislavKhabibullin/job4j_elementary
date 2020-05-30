@@ -13,6 +13,6 @@ public class Fit {
         double man=Fit.manWeight(178);
         System.out.println("Man weight = "+man+" kg");
         double wooman=Fit.woomanWeight(164);
-        System.out.println("Wooman weight = "+wooman+" kg");
+        System.out.println("Wooman weight = "+wooman+" - kg");
     }
 }
