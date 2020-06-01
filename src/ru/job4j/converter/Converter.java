@@ -2,13 +2,13 @@ package ru.job4j.converter;
 
 public class Converter {
     @SuppressWarnings("checkstyle:WhitespaceAround")
-    public static float rubleToEvro(float value) {
-        float rsl = value / 80;
+    public static int rubleToEvro(int value) {
+        int rsl = value / 80;
         return rsl;
     }
 
-    public static float rubleToDollar(float value) {
-        float rsl = value / 70;
+    public static int rubleToDollar(int value) {
+        int rsl = value / 70;
         return rsl;
     }
 
@@ -20,7 +20,7 @@ public class Converter {
         System.out.println("200 Rubles = " + dollar + " dollars");
         int in = 140;
         int expected = 2;
-        float out = Converter.rubleToDollar(in);
+        int out = Converter.rubleToDollar(in);
         boolean passed = expected == out;
         System.out.println("140 Rubbles = 2, test Result :" + passed);
 
