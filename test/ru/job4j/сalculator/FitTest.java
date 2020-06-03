@@ -1,6 +1,5 @@
-package ru.job4j.Calculator;
+package ru.job4j.сalculator;
 
-import junit.framework.TestCase;
 import org.junit.Assert;
 import org.junit.Test;
 

@@ -3,8 +3,7 @@ package ru.job4j.condition;
 @SuppressWarnings("checkstyle:EmptyLineSeparator")
 public class Triangle {
     public static boolean exist(double ab, double ac, double bc) {
-        boolean res = ab + ac > bc && ab + bc > ac && bc + ac > ab ? true : false;
-        return res;
+              return ab + ac > bc && ab + bc > ac && bc + ac > ab;
     }
 
     public static void main(String[] args) {
