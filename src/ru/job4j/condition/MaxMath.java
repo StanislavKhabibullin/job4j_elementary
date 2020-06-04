@@ -1,6 +1,6 @@
 package ru.job4j.condition;
 
-public class Math {
+public class MaxMath {
     public static int max(int first, int second) {
         int result = first > second ? first : second;
 
@@ -14,12 +14,13 @@ public class Math {
     }
 
     public static void main(String[] args) {
-        int res = Math.max(25, 36);
+        int res = MaxMath.max(25, 36);
         System.out.println("Max from 25 & 36 is - " + res);
-        String which = Math.whichMax(25, 36);
+        String which = MaxMath.whichMax(25, 36);
         System.out.println(which);
         System.out.println("Max from 27 & 27 is:");
-        which = Math.whichMax(27, 27);
+        which = MaxMath.whichMax(27, 27);
         System.out.println(which);
     }
+
 }
