@@ -32,4 +32,11 @@ public class FitnessTest {
         );
     }
 
+    @Test
+    public void whenIvanNineteenNikolayNineteen() {
+        assertThat(
+                Fitness.calc(90, 90),
+                is(1)
+        );
+    }
 }
