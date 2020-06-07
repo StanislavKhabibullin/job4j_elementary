@@ -3,13 +3,12 @@ package ru.job4j.loop;
 import org.junit.Test;
 import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.assertThat;
-import static org.junit.Assert.*;
 
 public class CheckPrimeNumberTest {
 
     @Test
     public void when5() {
-        boolean rsl = CheckPrimeNumber.calc(5);
+        boolean rsl = CheckPrimeNumber.check(5);
         assertThat(
                 rsl,
                 is(true)
@@ -18,7 +17,7 @@ public class CheckPrimeNumberTest {
 
     @Test
     public void when4() {
-        boolean rsl = CheckPrimeNumber.calc(4);
+        boolean rsl = CheckPrimeNumber.check(4);
         assertThat(
                 rsl,
                 is(false)
@@ -27,7 +26,7 @@ public class CheckPrimeNumberTest {
 
     @Test
     public void when1() {
-        boolean rsl = CheckPrimeNumber.calc(1);
+        boolean rsl = CheckPrimeNumber.check(1);
         assertThat(
                 rsl,
                 is(false)
