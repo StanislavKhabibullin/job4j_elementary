@@ -28,4 +28,12 @@ public class MatrixCheck {
         }
         return temp;
     }
+
+    public static char[] extraDiagonal(char[][] array) {
+        char[] rsl = new char[array.length];
+        for (int i = 0; i < array.length; i++) {
+            rsl[i] = array[i][i];
+        }
+        return rsl;
+    }
 }

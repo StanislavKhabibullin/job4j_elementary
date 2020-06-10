@@ -35,4 +35,19 @@ public class MatrixCheckTest {
                 is(true)
         );
     }
+
+    @Test
+    public void monoDiagonal() {
+        char[][] input = {
+                {'L', ' ', 'X'},
+                {'X', 'X', 'X'},
+                {' ', ' ', 'X'},
+        };
+        char[] rezult = MatrixCheck.extraDiagonal(input);
+        char[] expected = new char[]{'L', 'X', 'X'};
+        assertThat(
+                rezult,
+                is(expected)
+        );
+    }
 }
