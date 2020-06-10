@@ -4,8 +4,8 @@ public class BarleyBreak {
     public static void main(String[] args) {
         int[][] array = new int[3][3];
         int temp = 1;
-        for (int i = 0; i < 3; i++) {
-            for (int j = 0; j < 3; j++) {
+        for (int i = 0; i < array.length; i++) {
+            for (int j = 0; j < array.length; j++) {
                 array[i][j] = temp;
                 temp++;
             }
