@@ -21,4 +21,18 @@ public class MatrixCheckTest {
                 is(true)
         );
     }
+
+    @Test
+    public void monoVertikal() {
+        char[][] input = {
+                {' ', ' ', 'X'},
+                {'X', 'X', 'X'},
+                {' ', ' ', 'X'},
+        };
+        boolean rezult = MatrixCheck.monoVertikal(input, 2);
+        assertThat(
+                rezult,
+                is(true)
+        );
+    }
 }
