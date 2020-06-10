@@ -50,4 +50,38 @@ public class MatrixCheckTest {
                 is(expected)
         );
     }
+
+    @Test
+    public void whenMonoDataTrueThenTrue() {
+        char[][] input = {
+                {' ', ' ', 'X', ' ', ' '},
+                {' ', ' ', 'X', ' ', ' '},
+                {' ', ' ', 'X', ' ', ' '},
+                {' ', ' ', 'X', ' ', ' '},
+                {' ', ' ', 'X', ' ', ' '},
+        };
+        boolean rezult = MatrixCheck.isWith(input);
+        boolean expected = true;
+        assertThat(
+                rezult,
+                is(expected)
+        );
+    }
+
+    @Test
+    public void whenMonoDataFalseThenFalse() {
+        char[][] input = {
+                {' ', ' ', 'X', ' ', ' '},
+                {' ', 'X', 'X', ' ', ' '},
+                {' ', ' ', ' ', ' ', ' '},
+                {' ', ' ', 'X', ' ', ' '},
+                {' ', ' ', 'X', ' ', ' '},
+        };
+        boolean rezult = MatrixCheck.isWith(input);
+        boolean expected = false;
+        assertThat(
+                rezult,
+                is(expected)
+        );
+    }
 }

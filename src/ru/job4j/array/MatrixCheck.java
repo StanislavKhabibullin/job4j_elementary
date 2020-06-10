@@ -30,4 +30,19 @@ public class MatrixCheck {
         }
         return rsl;
     }
+
+    public static boolean isWith(char[][] board) {
+        boolean temp = false;
+        char[] diag = new char[board.length];
+        diag = MatrixCheck.extraDiagonal(board);
+        for (int i = 0; i < diag.length; i++) {
+            if (diag[i] == 'X') {
+                temp = MatrixCheck.monoHorizontal(board, i) | MatrixCheck.monoVertikal(board, i);
+                if (temp) {
+                    break;
+                }
+            }
+        }
+        return temp;
+    }
 }
