@@ -7,6 +7,7 @@ public class MatrixCheck {
         for (int i = 0; i < array[row].length; i++) {
             if (array[row][i] != 'X') {
                 temp = false;
+                break;
             }
         }
         return temp;
@@ -18,6 +19,7 @@ public class MatrixCheck {
         for (int i = 0; i < array[0].length; i++) {
             if (array[i][column] != 'X') {
                 temp = false;
+                break;
             }
         }
         return temp;
