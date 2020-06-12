@@ -36,7 +36,7 @@ public class MatrixCheck {
     public static boolean isWith(char[][] board) {
         boolean temp = false;
 
-        for (int i = 0; i < MatrixCheck.extraDiagonal(board).length; i++) {
+        for (int i = 0; i < board.length; i++) {
             if (board[i][i] == 'X') {
                 temp = MatrixCheck.monoHorizontal(board, i) || MatrixCheck.monoVertikal(board, i);
                 if (temp) {
