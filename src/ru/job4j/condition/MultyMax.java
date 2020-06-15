@@ -1,6 +1,5 @@
 package ru.job4j.condition;
 
-@SuppressWarnings("checkstyle:WhitespaceAround")
 public class MultyMax {
     public static int max(int first, int second, int fird) {
         int result = first > second ? first : second;

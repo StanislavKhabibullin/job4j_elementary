@@ -9,7 +9,6 @@ public class BarleyBreak {
                 array[i][j] = temp;
                 temp++;
             }
-
         }
     }
 }

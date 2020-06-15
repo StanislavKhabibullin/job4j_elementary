@@ -1,9 +1,11 @@
 package ru.job4j.condition;
 
+/**
+ * Тернарный оператор
+ */
 public class MaxMath {
     public static int max(int first, int second) {
         int result = first > second ? first : second;
-
         return result;
     }
 

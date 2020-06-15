@@ -41,6 +41,5 @@ public class Converter {
         int out = Converter.rubleToDollar(in);
         boolean passed = expected == out;
         System.out.println("140 Rubbles = 2, test Result :" + passed);
-
     }
 }

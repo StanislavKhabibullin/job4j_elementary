@@ -1,6 +1,5 @@
 package ru.job4j.condition;
 
-@SuppressWarnings("checkstyle:WhitespaceAround")
 public class DummyBot {
     public static String answer(String question) {
         String rsl = "Это ставит меня в тупик. Задайте другой вопрос.";
