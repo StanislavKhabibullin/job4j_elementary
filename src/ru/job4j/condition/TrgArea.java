@@ -1,6 +1,16 @@
 package ru.job4j.condition;
 
 public class TrgArea {
+    private Point first;
+    private Point second;
+    private Point third;
+
+    public TrgArea(Point ab, Point bc, Point ca) {
+        this.first = ab;
+        this.second = bc;
+        this.third = ca;
+    }
+
     public static boolean exist(double a, double b, double c) {
         return a + c > b && b + c > a && b + a > c;
     }
@@ -16,14 +26,11 @@ public class TrgArea {
         return rsl;
     }
 
-    public double area(int x1, int y1, int x2, int y2, int x3, int y3) {
+    public double area() {
         double square = -1;
-        Point first = new Point(x1, y1);
-        Point second = new Point(x2, y2);
-        Point third = new Point(x3, y3);
-        double a = first.distances(second);
-        double b = first.distances(third);
-        double c = second.distances(third);
+        double a = this.first.distances(second);
+        double b = this.first.distances(third);
+        double c = this.second.distances(third);
         double p = TrgArea.period(a, b, c);
         if (this.exist(a, b, c)) {
             square = this.trgsquare(a, b, c);
@@ -32,11 +39,17 @@ public class TrgArea {
     }
 
     public static void main(String[] args) {
-        TrgArea first = new TrgArea();
-        TrgArea second = new TrgArea();
-        double rez1 = first.area(0, 0, 0, 2, 2, 0);
-        double rez2 = second.area(3, 7, 10, -11, 6, 900);
+        Point first = new Point(0, 0);
+        Point second = new Point(0, 2);
+        Point third = new Point(2, 0);
+        TrgArea temp;
+        temp = new TrgArea(first, second, third);
+        double rez1 = temp.area();
         System.out.println(rez1);
-        System.out.println(rez2);
+        first = new Point(7, 7);
+        second = new Point(-10, 100);
+        third = new Point(900, 5);
+        temp = new TrgArea(first, second, third);
+        System.out.println(temp.area());
     }
 }
