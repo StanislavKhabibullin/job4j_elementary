@@ -17,4 +17,11 @@ public class PointTest {
         double out = Point.distance(inx1, iny1, inx2, iny2);
         Assert.assertEquals(expected, out, 0.01);
     }
+
+    @Test
+    public void distanc3D() {
+        Point zero = new Point(0, 0, 0);
+        Point ending = new Point(5, 5, 5);
+        assertEquals(zero.distanc3D(ending), 7.07, 0.01);
+    }
 }
