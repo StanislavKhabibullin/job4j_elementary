@@ -14,6 +14,12 @@ public class MaxMathTest {
     }
 
     @Test
+    public void max4() {
+        int rsl = MaxMath.max(1, 2, 3, 4);
+        assertThat(rsl, is(4));
+    }
+
+    @Test
     public void firstMax() {
         assertThat(
                 MaxMath.whichMax(25, 14),
