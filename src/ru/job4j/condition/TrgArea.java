@@ -15,13 +15,7 @@ public class TrgArea {
         return a + c > b && b + c > a && b + a > c;
     }
 
-    public static double trgsquare(double a, double b, double c) {
-        double p = (a + b + c) / 2;
-        double src = Math.sqrt(p * (p - a) * (p - b) * (p - c));
-        return src;
-    }
-
-       public static double period(double a, double b, double c) {
+    public static double period(double a, double b, double c) {
         double rsl = ((a + b + c) / 2);
         return rsl;
     }
@@ -33,7 +27,7 @@ public class TrgArea {
         double c = this.second.distances(third);
         double p = TrgArea.period(a, b, c);
         if (this.exist(a, b, c)) {
-            square = this.trgsquare(a, b, c);
+            square = Math.sqrt(p * (p - a) * (p - b) * (p - c));
         }
         return square;
     }

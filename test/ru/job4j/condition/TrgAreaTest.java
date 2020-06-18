@@ -6,6 +6,7 @@ import static org.junit.Assert.assertThat;
 
 import static org.junit.Assert.*;
 
+@SuppressWarnings("checkstyle:EmptyLineSeparator")
 public class TrgAreaTest {
 
     @Test
@@ -16,11 +17,15 @@ public class TrgAreaTest {
     }
 
     @Test
-    public void area() {
-        assertEquals(
-                TrgArea.trgsquare(2, 2, 2),
-                1.73,
-                0.01
+    public void area1() {
+        Point first = new Point(0, 0);
+        Point second = new Point(0, 3);
+        Point third = new Point(3, 0);
+        TrgArea temp;
+        temp = new TrgArea(first, second, third);
+        assertEquals(temp.area(),
+                4.5,
+                0.1
         );
     }
 }
