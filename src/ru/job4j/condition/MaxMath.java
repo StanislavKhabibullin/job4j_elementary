@@ -10,13 +10,11 @@ public class MaxMath {
     }
 
     public static int max(int first, int second, int third) {
-        int result = third > max(first, second) ? third : max(first, second);
-        return result;
+        return max(max(first, second), third);
     }
 
     public static int max(int first, int second, int third, int fourth) {
-        int result = fourth > max(first, second, third) ? fourth : max(first, second, third);
-        return result;
+        return max(max(first, second, third), fourth);
     }
 
     public static String whichMax(int first, int second) {
