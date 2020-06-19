@@ -7,8 +7,8 @@ public class Reduce {
      * @param mas методе to не подхватывает значения аргумента из за конфликта имени поля и имени аргумента
      *           думаю из за этого происходит ошибка, заменил аргумент на mas[]
      */
-    public void to(int[] mas) {
-        array = mas;
+    public void to(int[] array) {
+        this.array = array;
     }
 
     public void print() {
