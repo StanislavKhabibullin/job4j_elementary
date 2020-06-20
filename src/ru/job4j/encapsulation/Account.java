@@ -1,7 +1,7 @@
-package ru.job4j.ru.job4j.encapsulation;
+package ru.job4j.encapsulation;
 
 public class Account {
-   private int balance;
+   public int balance;
 
     public void addMoney(int money) {
         if (money > 0) {

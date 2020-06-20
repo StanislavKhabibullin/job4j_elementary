@@ -1,4 +1,4 @@
-package ru.job4j.ru.job4j.inheritance;
+package ru.job4j.inheritance;
 
 public class ReportUseAge {
     public static void main(String[] args) {
