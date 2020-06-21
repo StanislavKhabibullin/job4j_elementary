@@ -5,8 +5,10 @@ public class JSONReport extends TechPort {
 
     @Override
     public String generate(String name, String body) {
-        return "name: " + name + ','
+        return '{' + System.lineSeparator()
+                + "name: " + name + ','
                 + System.lineSeparator()
-                + "body: " + body;
+                + "body: " + body
+                + System.lineSeparator() + '}';
     }
 }
