@@ -13,9 +13,7 @@ public class Fact {
 
     public static int calc(int number) {
         int rezult = 1;
-        if (number < 0) {
-            throw new java.lang.IllegalArgumentException("Entered number must be positive");
-        } else {
+        if (number > 0) {
             for (int i = 1; i <= number; i++) {
                 rezult *= i;
             }
